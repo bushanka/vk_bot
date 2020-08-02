@@ -18,3 +18,5 @@ while True:
             if event.from_user and not event.from_me:
                 if response == 'привет':
                     vk_session.method('messages.send', {'user_id': event.user_id, 'message': 'Привет!', 'random_id': 0})
+                if response == 'отключись!':
+                    break
